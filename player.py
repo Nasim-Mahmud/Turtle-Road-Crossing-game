@@ -10,3 +10,4 @@ class Player(Turtle):
         self.color("black")
         self.shape("turtle")
         self.penup()
+        self.left(90)
