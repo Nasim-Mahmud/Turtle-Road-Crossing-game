@@ -9,15 +9,17 @@ screen.setup(width=600, height=600)
 screen.tracer(0)
 
 
-player = Player()
+player1 = Player()
+player2 = Player()
 transports = Transport()
 
 screen.listen()
-screen.onkey(player.Up, "Up")
+screen.onkey(player1.Up, "Up")
 game_is_on = True
 
 while game_is_on:
     time.sleep(0.1)
+    transports.auto_move()
     screen.update()
 
 screen.exitonclick()
