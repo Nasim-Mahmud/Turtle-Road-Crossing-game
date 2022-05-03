@@ -12,4 +12,4 @@ class Player(Turtle):
         self.shape("turtle")
         self.penup()
         self.left(90)
-        self.setposition(0, -280)
+        self.setposition(0, -270)
