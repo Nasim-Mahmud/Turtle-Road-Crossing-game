@@ -9,6 +9,9 @@ screen.tracer(0)
 
 
 player = Player()
+
+screen.listen()
+screen.onclick(player.Up, "up")
 game_is_on = True
 
 while game_is_on:
