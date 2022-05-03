@@ -14,8 +14,8 @@ class Transport(Turtle):
     def random_pos(self):
         self.goto(random.randint(270, 350), random.randint(-250, 260))
 
-    def auto_move(self):
-        self.backward(STARTING_MOVE_DISTANCE)
+    # def auto_move(self):
+    #     self.backward(STARTING_MOVE_DISTANCE)
 
     def spawn(self):
         self.color(random.choice(COLORS))
@@ -23,3 +23,4 @@ class Transport(Turtle):
         self.shapesize(stretch_wid=1, stretch_len=2)
         self.penup()
         self.random_pos()
+        self.backward(STARTING_MOVE_DISTANCE)
