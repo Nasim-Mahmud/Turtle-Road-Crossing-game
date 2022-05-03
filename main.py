@@ -11,6 +11,7 @@ screen.tracer(0)
 
 player = Player()
 transports1 = Transport()
+
 transports2 = Transport()
 
 
