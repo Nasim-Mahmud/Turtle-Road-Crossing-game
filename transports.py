@@ -18,7 +18,7 @@ class Transport(Turtle):
         self.auto_move()
 
     def random_pos(self):
-        self.goto(270, random.randint(-270, 270))
+        self.goto(random.randint(270, 350), random.randint(-250, 250))
 
     def auto_move(self):
         self.backward(STARTING_MOVE_DISTANCE)
