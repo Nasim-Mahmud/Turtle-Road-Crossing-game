@@ -23,3 +23,4 @@ class Transport(Turtle):
         self.shapesize(stretch_wid=1, stretch_len=2)
         self.penup()
         self.random_pos()
+        self.backward(STARTING_MOVE_DISTANCE)

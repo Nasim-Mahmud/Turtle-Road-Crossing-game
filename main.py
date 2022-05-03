@@ -10,7 +10,7 @@ screen.tracer(0)
 
 
 player = Player()
-transports = Transport()
+# transports = Transport()
 
 screen.listen()
 screen.onkey(player.Up, "Up")
@@ -18,8 +18,9 @@ game_is_on = True
 
 while game_is_on:
     time.sleep(0.1)
-    transports.spawn()
-    transports.auto_move()
+    transports = Transport()
+    # transports.spawn()
+    # transports.auto_move()
     screen.update()
 
 screen.exitonclick()
