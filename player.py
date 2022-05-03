@@ -13,3 +13,7 @@ class Player(Turtle):
         self.penup()
         self.left(90)
         self.setposition(0, -270)
+
+
+    def Up(self):
+        self.forward(MOVE_DISTANCE)
