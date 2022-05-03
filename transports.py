@@ -10,6 +10,7 @@ class Transport(Turtle):
     def __init__(self):
         super().__init__()
         self.spawn()
+        self.auto_move()
 
     def random_pos(self):
         self.goto(random.randint(270, 350), random.randint(-250, 260))
