@@ -14,12 +14,13 @@ class Transport(Turtle):
         # self.left(90)
         self.shapesize(stretch_wid=1, stretch_len=2)
         self.penup()
-        self.random_pos()
-        self.auto_move()
+        # self.random_pos()
+        self.auto_move(self.random_pos())
 
     def random_pos(self):
-        self.goto(270, random.randint(-270, 270))
+        rand_pos = random.randint(-270, 270)
+        return rand_pos
 
-    def auto_move(self):
-        self.backward(10)
-
+    def auto_move(self, pos):
+        self.goto(pos)
+        self.backward(STARTING_MOVE_DISTANCE)
