@@ -8,7 +8,6 @@ MOVE_INCREMENT = 10
 
 class Transport(Turtle):
     def __init__(self):
-        super().__init__()
         self.all_cars = []
 
     def create_car(self):
