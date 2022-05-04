@@ -10,7 +10,8 @@ screen.tracer(0)
 
 
 player = Player()
-# transports = Transport()
+transports = Transport()
+transports.auto_move()
 
 screen.listen()
 screen.onkey(player.Up, "Up")
