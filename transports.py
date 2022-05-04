@@ -10,6 +10,12 @@ class Transport(Turtle):
     def __init__(self):
         all_cars = []
 
+    def create_cars(self):
+        new_car = Turtle()
+        new_car.shape("square")
+        new_car.shapesize(stretch_wid=1, stretch_len=2)
+        new_car.penup()
+
     def random_pos(self):
         self.goto(random.randint(270, 350), random.randint(-250, 260))
 
@@ -18,8 +24,6 @@ class Transport(Turtle):
 
     def spawn(self):
         self.color(random.choice(COLORS))
-        self.shape("square")
-        self.shapesize(stretch_wid=1, stretch_len=2)
-        self.penup()
+
         self.random_pos()
         self.backward(STARTING_MOVE_DISTANCE)
