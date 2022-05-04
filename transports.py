@@ -8,8 +8,7 @@ MOVE_INCREMENT = 10
 
 class Transport(Turtle):
     def __init__(self):
-        super().__init__()
-        self.spawn()
+        all_cars = []
 
     def random_pos(self):
         self.goto(random.randint(270, 350), random.randint(-250, 260))
