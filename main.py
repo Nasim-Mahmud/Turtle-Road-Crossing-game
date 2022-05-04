@@ -21,7 +21,7 @@ while game_is_on:
     screen.update()
     transports.create_car()
     transports.auto_move()
-    if player.ycor() > 0:
+    if player.ycor() > 270:
         player.reset_position()
 
 screen.exitonclick()
