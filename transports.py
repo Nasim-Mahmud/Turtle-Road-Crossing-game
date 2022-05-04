@@ -18,3 +18,7 @@ class Transport(Turtle):
         random_y = random.randint(-250, 250)
         new_car.goto(320, random_y)
         self.all_cars.append(new_car)
+
+    def auto_move(self):
+        for car in self.all_cars:
+            car.backward(STARTING_MOVE_DISTANCE)

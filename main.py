@@ -20,5 +20,6 @@ while game_is_on:
     time.sleep(0.1)
     screen.update()
     transports.create_car()
+    transports.auto_move()
 
 screen.exitonclick()
