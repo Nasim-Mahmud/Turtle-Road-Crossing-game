@@ -24,3 +24,6 @@ class Transport(Turtle):
     def auto_move(self):    # Adding moving ability
         for car in self.all_cars:
             car.backward(STARTING_MOVE_DISTANCE)
+
+    def level_up(self):
+        pass
