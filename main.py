@@ -1,6 +1,7 @@
 from turtle import Screen
 from player import Player
 from transports import Transport
+from scoreboard import Scoreboard
 import time
 
 screen = Screen()
@@ -11,6 +12,8 @@ screen.tracer(0)
 
 player = Player()
 transports = Transport()
+scoreboard = Scoreboard()
+
 
 screen.listen()
 screen.onkey(player.Up, "Up")
