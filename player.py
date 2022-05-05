@@ -20,3 +20,7 @@ class Player(Turtle):
 
     def reset_position(self):
         self.setposition(START_POS)
+
+    def finish_line_reached(self):
+        if self.ycor() > FINISH_LINE_Y:
+            self.setposition(START_POS)

@@ -21,8 +21,10 @@ while game_is_on:
     screen.update()
     transports.create_car()
     transports.auto_move()
-    if player.ycor() > 270:
-        player.reset_position()
+
+    # Detect if the player reaches the top side
+    if player.ycor() > 280:
+        player.finish_line_reached()
 
 #     Detect collision with transport
     for cars in transports.all_cars:
