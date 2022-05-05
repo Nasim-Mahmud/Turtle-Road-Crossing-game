@@ -12,7 +12,7 @@ class Player(Turtle):
         self.shape("turtle")
         self.penup()
         self.left(90)
-        self.setposition(START_POS)
+        self.goto_start()
 
     def Up(self):  # Setting up the key
         new_y = self.ycor() + MOVE_DISTANCE
@@ -21,6 +21,11 @@ class Player(Turtle):
     def reset_position(self):
         self.setposition(START_POS)
 
+    def goto_start(self):
+        self.goto(START_POS)
+
     def finish_line_reached(self):
         if self.ycor() > FINISH_LINE_Y:
-            self.setposition(START_POS)
+            return True
+        else:
+            return False
