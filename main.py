@@ -25,6 +25,7 @@ while game_is_on:
     # Detect if the player reaches the top side
     if player.finish_line_reached():
         player.goto_start()
+        transports.level_up()
 
 #     Detect collision with transport
     for cars in transports.all_cars:
