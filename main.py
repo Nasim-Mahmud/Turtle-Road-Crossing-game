@@ -24,4 +24,9 @@ while game_is_on:
     if player.ycor() > 270:
         player.reset_position()
 
+#     Detect collision with transport
+    for cars in transports.all_cars:
+        if cars.distance(player) < 20:
+            game_is_on = False
+
 screen.exitonclick()
