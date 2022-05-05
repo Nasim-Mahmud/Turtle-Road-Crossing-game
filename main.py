@@ -29,6 +29,7 @@ while game_is_on:
     if player.finish_line_reached():
         player.goto_start()
         transports.level_up()
+        scoreboard.level_up()
 
 #     Detect collision with transport
     for cars in transports.all_cars:
