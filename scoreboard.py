@@ -1,4 +1,5 @@
 from turtle import Turtle
+
 FONT = ("Courier", 24, "normal")
 
 
@@ -8,4 +9,4 @@ class Scoreboard(Turtle):
         self.level = 1
         self.ht()
         self.penup()
-        self.write(f"Level: {self.level}", align= "Left", font=FONT)
+        self.write(f"Level: {self.level}", align="Left", font=FONT)
