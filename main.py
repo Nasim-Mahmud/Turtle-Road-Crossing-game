@@ -9,16 +9,13 @@ screen.bgcolor("white")
 screen.setup(width=600, height=600)
 screen.tracer(0)
 
-
 player = Player()
 transports = Transport()
 scoreboard = Scoreboard()
 
-
 screen.listen()
 screen.onkey(player.Up, "Up")
 game_is_on = True
-
 
 while game_is_on:
     time.sleep(0.1)
@@ -32,7 +29,7 @@ while game_is_on:
         transports.level_up()
         scoreboard.level_up()
 
-#     Detect collision with transport
+    #     Detect collision with transport
     for cars in transports.all_cars:
         if cars.distance(player) < 20:
             scoreboard.game_over()
