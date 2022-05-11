@@ -22,7 +22,7 @@ class Transport(Turtle):
             new_car.goto(320, random_y)
             self.all_cars.append(new_car)
 
-    def auto_move(self):    # Adding moving ability
+    def auto_move(self):  # Adding moving ability
         for car in self.all_cars:
             car.backward(self.car_speed)
 
